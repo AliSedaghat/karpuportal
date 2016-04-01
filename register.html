@@ -31,20 +31,17 @@
             <i class="fa fa-sign-in w3-large"></i></a>
         </li>
         <li class="w3-left">
-            <a href="/karpuportal/register.html" title="عضویت">
+            <a href="#" title="عضویت">
                 <i class="fa fa-male w3-large"></i>
             </a>
         </li>
     </ul>
 </div>
 
-<!-- login form -->
+<!-- register form -->
 <div class="w3-container w3-right-align w3-margin-top
             w3-margin-bottom w3-white w3-card-4"
      style="margin: auto; width: 50%;">
-    <div class="w3-center w3-margin-top">
-        <img src="image/photo_login.png" alt="login" class="w3-circle">
-    </div>
 
     <form class="w3-container">
         <p>
@@ -53,19 +50,29 @@
         <p>
             <input class="w3-input" type="password" style="direction: rtl" required>
             <label class="w3-label">رمز عبور</label></p>
+        <p>
+            <input class="w3-input" type="text" style="direction: rtl" required>
+            <label class="w3-label">ایمیل</label>
+        </p>
 
         <p>
-            <input id="milk" class="w3-check" type="checkbox" checked="checked">
-            <label class="w3-validate">مرا به خاطر بسپار</label></p>
+            <label class="w3-validate">کارفرما</label>
+            <input class="w3-radio" type="radio" name="person" value="karfarma" checked>
+        </p>
 
         <p>
-            <button class="w3-btn w3-section w3-teal w3-ripple w3-center">ورود</button></p>
+            <label class="w3-validate">کارجو</label>
+            <input class="w3-radio" type="radio" name="person" value="karjo">
+        </p>
+
+
+        <p>
+            <button class="w3-btn w3-section w3-teal w3-ripple w3-center">ثبت نام</button></p>
 
     </form>
 
     <div class="w3-center w3-margin-top">
-        <p>   عضو پرتال ما نیستید؟<a class="w3-text-blue">ثبت نام کنید</a><br>رمز عبور خود را فراموش کرده اید؟
-            <a class="w3-text-blue">بازیابی کنید</a></p>
+        <p>حساب کاربری دارید؟ <a href="/karpuportal/login.html" class="w3-text-blue">وارد شوید</a> </p>
     </div>
 
 </div>
