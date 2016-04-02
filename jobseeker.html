@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>لیست کارجویان</title>
+</head>
+
+<body id="myPage">
+
+<!-- navbar -->
+<div>
+    <ul class="w3-navbar w3-card-2 w3-light-grey">
+        <li class="w3-right">
+            <a href="/karpuportal/index.html">
+                <i class="fa fa-home w3-large"></i>
+            </a>
+        </li>
+        <li class="w3-right w3-teal">
+            <a href="#">فرصت های شغلی</a>
+        </li>
+        <li class="w3-right">
+            <a href="#">کارجویان</a>
+        </li>
+        <li class="w3-right">
+            <a href="#">درباره ما</a>
+        </li>
+        <li class="w3-left"><a href="#" title="ورود">
+            <i class="fa fa-sign-in w3-large"></i></a>
+        </li>
+        <li class="w3-left">
+            <a href="#" title="عضویت">
+                <i class="fa fa-male w3-large"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- job oppurtunity search -->
+
+<form>
+    <div class="w3-row-padding w3-center w3-small w3-sand"
+         style="direction: rtl; width: 100%; margin-top: 0px; margin: auto;">
+        <h4 class="w3-center w3-text-pink">لیست کارجویان کاریابی ها</h4>
+        <hr class="w3-teal">
+        <div class="w3-row-padding w3-center w3-small"
+             style="direction: rtl; width: 70%;  margin: auto;">
+
+            <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                <label>مقطع تحصیلی</label>
+                <select class="w3-select w3-round" name="option">
+                    <option value="" disabled selected>انتخاب کنید</option>
+                    <option value="1">بی سواد</option>
+                    <option value="2">ابتدایی</option>
+                    <option value="3">راهنمایی</option>
+                    <option value="4">دیپلم</option>
+                    <option value="5">فوق دیپلم</option>
+                    <option value="6">کارشناسی</option>
+                    <option value="7">کارشناسی ارشد</option>
+                    <option value="8">دکترا</option>
+                </select>
+            </div>
+            <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                <label>رشته</label>
+                <select class="w3-select w3-round" name="option">
+                    <option value="" disabled selected>انتخاب کنید</option>
+                    <option value="1">مهندسی کامپیوتر</option>
+                    <option value="2">مکانیک سیالات</option>
+                    <option value="3">مکانیک جامدات</option>
+                    <option value="4">مهندسی عمران</option>
+                </select>
+            </div>
+            <div class="w3-col m4 w3-right">
+                <label>گرایش</label>
+                <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+            </div>
+        </div>
+        <br><br>
+        <div class="w3-row-padding w3-center w3-small"
+             style="direction: rtl; width: 70%;margin: auto;">
+
+            <div class="w3-col m4 w3-right">
+                <label>مهارت</label>
+                <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+            </div>
+            <div class="w3-col m4 w3-right">
+                <label>شغل درخواستی</label>
+                <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+            </div>
+            <div class="w3-col m4 w3-right">
+                <label>سابقه شغلی</label>
+                <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+            </div>
+        </div>
+        <br><br>
+        <div class="w3-row-padding w3-center w3-small"
+             style="direction: rtl; width: 70%;margin: auto;">
+
+            <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                <label>استان</label>
+                <select class="w3-select w3-round" name="option">
+                    <option value="" disabled selected>انتخاب کنید</option>
+                    <option value="1">تهران</option>
+                    <option value="2">آذربایجان شرقی</option>
+                    <option value="3">اصفهان</option>
+                    <option value="3">شیراز</option>
+                </select>
+            </div>
+            <div class="w3-col m4 w3-right">
+                <label>شهر</label>
+                <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+            </div>
+            <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                <label>جنسیت</label>
+                <select class="w3-select w3-round" name="option">
+                    <option value="" disabled selected>انتخاب کنید</option>
+                    <option value="1">مرد</option>
+                    <option value="2">زن</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="w3-container" style="margin:auto;">
+            <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
+                   type="submit" value="جستجو" style="height: 30px;">
+        </div>
+        <br>
+    </div>
+
+</form>
+<div class="w3-responsive" style="direction: rtl;">
+    <table class="w3-table w3-striped w3-bordered w3-border-top w3-border-bottom w3-hoverable">
+        <thead>
+        <tr class="w3-grey">
+            <th class="w3-right-align">ردیف</th>
+            <th class="id01 w3-right-align">ش پرونده</th>
+            <th id="id01" class="w3-right-align">تاریخ ثبت</th>
+            <th class="w3-right-align">مقطع تحصیلی</th>
+            <th class="w3-right-align">رشته</th>
+            <th class="w3-right-align">گرایش</th>
+            <th class="w3-right-align">نام کاریابی</th>
+            <th class="w3-right-align">استان</th>
+            <th class="w3-right-align">آدرس</th>
+            <th class="w3-right-align">جنسیت</th>
+            <th class="w3-right-align">سن</th>
+            <th class="w3-right-align">جزییات</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align">
+                <button onclick="openModal('id02', 'myPage')"
+                        class="w3-btn w3-tiny w3-border w3-round w3-border-blue-grey w3-white"
+                        style="height: 25px;"><b>بیشتر</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align">
+                <button onclick="openModal('id02', 'myPage')"
+                        class="w3-btn w3-tiny w3-border w3-round w3-border-blue-grey w3-white"
+                        style="height: 25px;"><b>بیشتر</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align">
+                <button onclick="openModal('id02', 'myPage')"
+                        class="w3-btn w3-tiny w3-border w3-round w3-border-blue-grey w3-white"
+                        style="height: 25px;"><b>بیشتر</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align">
+                <button onclick="openModal('id02', 'myPage')"
+                        class="w3-btn w3-tiny w3-border w3-round w3-border-blue-grey w3-white"
+                        style="height: 25px;"><b>بیشتر</b></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align"></td>
+            <td class="w3-right-align">
+                <button onclick="openModal('id02', 'myPage')"
+                        class="w3-btn w3-tiny w3-border w3-round w3-border-blue-grey w3-white"
+                        style="height: 25px;"><b>بیشتر</b></button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="w3-container w3-grey w3-border-bottom w3-border-left w3-border-right w3-border-blue-grey">
+    <ul class="w3-pagination">
+        <li><a href="#">«</a></li>
+        <li><a class="w3-blue-grey" href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+    </ul>
+</div>
+
+<!-- detail modal -->
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top" style="width: 50%">
+        <header class="w3-container w3-blue-grey" >
+            <span onclick="closeModal('id02', 'myPage')" class="w3-closebtn">
+                ×
+            </span>
+            <h2 class="w3-center">اطلاعات بیشتر</h2>
+        </header>
+        <div class="w3-container">
+            <div class="w3-container w3-border">
+                <header class="w3-blue w3-padding">
+                    <p class="w3-right-align">:نام کاریابی<span></span></p>
+                </header>
+                <div class="w3-row
+                    w3-card-4 w3-small w3-border w3-border-grey w3-light-grey"
+                     style="direction: rtl; width: 100%;  margin: auto;">
+
+                    <div class="w3-row-padding w3-small"
+                         style="direction: rtl; width: 100%; margin: auto;">
+                        <br>
+                        <div class="w3-col m6 w3-right" style="width: 50%;">
+                            <label class="w3-label w3-text-black"><b>جنسیت:</b> <span></span></label>
+                        </div>
+                        <div class="w3-col m6 w3-right" style="margin: auto;">
+                            <label class="w3-label w3-text-black"><b>وضعیت تاهل:</b> <span></span></label>
+                        </div>
+                    </div>
+                    <div class="w3-row-padding w3-small"
+                         style="direction: rtl; width: 100%; margin: auto;">
+                        <br>
+                        <div class="w3-col m6 w3-right" style="width: 50%;">
+                            <label class="w3-label w3-text-black"><b>سن:</b> <span></span></label>
+                        </div>
+                        <div class="w3-col m6 w3-right" style="margin: auto;">
+                            <label class="w3-label w3-text-black"><b>آدرس:</b> <span></span></label>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <header class="w3-blue w3-padding">
+                    <h6 class="w3-right-align">سوابق تحصیلی</h6>
+                </header>
+                <div class="w3-responsive" style="direction: rtl;">
+                    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable">
+                        <thead>
+                        <tr class="w3-grey">
+                            <th class="w3-right-align">نام دانشگاه</th>
+                            <th class="w3-right-align">رشته</th>
+                            <th class="w3-right-align">گرایش</th>
+                            <th class="w3-right-align">مدرک</th>
+                            <th class="w3-right-align">تاریخ فارغ تحصیلی</th>
+
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td class="w3-right-align">بلابلا</td>
+                            <td class="w3-right-align">بلابلا</td>
+                            <td class="w3-right-align">بلابلا</td>
+                            <td class="w3-right-align">بلابلا</td>
+                            <td class="w3-right-align">بلابلا</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <header class="w3-blue w3-padding">
+                    <h6 class="w3-right-align">سوابق کاری</h6>
+                </header>
+                <div class="w3-responsive" style="direction: rtl;">
+                    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable">
+                        <thead>
+                        <tr class="w3-grey">
+                            <th class="w3-right-align">نام شرکت</th>
+                            <th class="w3-right-align">حرفه</th>
+                            <th class="w3-right-align">مدت فعالیت(ماه)</th>
+
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td class="w3-right-align">بلابلا</td>
+                            <td class="w3-right-align">بلابلا</td>
+                            <td class="w3-right-align">بلابلا</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <header class="w3-blue w3-padding">
+                    <h6 class="w3-right-align">مشاغل درخواستی</h6>
+                </header>
+                <div class="w3-responsive" style="direction: rtl;">
+                    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable">
+                        <thead>
+                        <tr class="w3-grey">
+                            <th class="w3-right-align">عنوان شغلی</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td class="w3-right-align">بلابلا</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="w3-container">
+
+            </div>
+            <div class="w3-container">
+
+            </div>
+
+        </div>
+        <footer class="w3-container w3-blue-grey w3-right-align">
+            <p><b>:آدرس</b> <span></span></p>
+        </footer>
+    </div>
+</div>
+
+<!-- Container -->
+<div class="w3-container w3-padding-64 w3-white">
+    <div class="w3-row">
+        <div class="w3-col m5 w3-right w3-right-align">
+            <h3>آدرس</h3>
+            <p>  دانشگاه شهید بهشتی<i class="fa fa-map-marker w3-text-teal w3-xlarge"></i></p>
+            <p>+00 1515151515  <i class="fa fa-phone w3-text-teal w3-xlarge"></i></p>
+            <p>test@test.com  <i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i></p>
+        </div>
+        <div class="w3-col m7">
+            <h2 class="w3-padding-bottom w3-right-align">تماس با ما</h2>
+            <form class="w3-container w3-right-align" style="direction: rtl">
+                <div class="w3-group">
+                    <input class="w3-input" style="width:100%;" type="text" required>
+                    <label class="w3-label w3-validate">نام</label>
+                </div>
+                <div class="w3-group">
+                    <input class="w3-input" style="width:100%;" type="text" required>
+                    <label class="w3-label w3-validate">ایمیل</label>
+                </div>
+                <div class="w3-group">
+                    <textarea class="w3-input" style="width:100%;"></textarea>
+                    <label class="w3-label">پیغام</label>
+                </div>
+                <button type="button" class="w3-btn w3-right w3-border w3-border-blue-grey w3-white">ارسال</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme w3-center w3-black">
+    <h4>ما را دنبال کنید</h4>
+    <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+    <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+    <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+    <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+    <p>© Copyright to ali sedaghat</p>
+
+    <div style="position:relative;bottom:103px;z-index:1;" class="w3-tooltip w3-right">
+        <span class="w3-text w3-padding w3-teal">برو بالا</span>
+        <a class="w3-btn w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+    </div>
+</footer>
+
+<script>
+    function openModal(id1, id2) {
+        document.getElementById(id1).style.display='block';
+        document.getElementById(id2).style.overflow='hidden';
+    }
+    function closeModal(id1, id2) {
+        document.getElementById(id1).style.display='none';
+        document.getElementById(id2).style.overflow='visible';
+    }
+</script>
+</body>
+</html>
+
