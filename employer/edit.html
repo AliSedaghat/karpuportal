@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+    .info {
+        display: none;
+    }
+
+</style>
+<body>
+
+<div>
+    <ul class="w3-navbar w3-card-2 w3-dark-grey">
+        <li class="w3-right w3-padding-right"><h3>پنل کارفرما</h3></li>
+        <li class="w3-dropdown-hover w3-padding-top w3-left">
+            <a href="#">کاربر <i class="fa fa-caret-down"></i></a>
+            <div class="w3-dropdown-content w3-blue-grey w3-right-align">
+                <a href="#">تغییر نام کاربری</a>
+                <a href="#">تغییر کلمه عبور</a>
+                <a href="#">تکمیل اطلاعات تماسی</a>
+                <a href="#">خروج</a>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<div style="direction: rtl;">
+    <nav class="w3-sidenav w3-blue-grey" style="width:25%;">
+        <div class="w3-accordion">
+            <a onclick="myAccFunc('demoAcc1')" class="w3-padding" href="#">اطلاعات تماسی <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAcc1" class="w3-accordion-content w3-animate-top w3-blue-grey w3-card-4">
+                <a class="w3-border-bottom" href="#">ویرایش</a>
+            </div>
+        </div>
+        <div class="w3-accordion">
+            <a onclick="myAccFunc('demoAcc2')" class="w3-padding" href="#">فرصت شغلی <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAcc2" class="w3-accordion-content w3-animate-top w3-blue-grey w3-card-4">
+                <a class="w3-border-bottom" href="#">ثبت فرصت شغلی</a>
+                <a class="w3-border-bottom" href="#">لیست فرصت های شغلی من</a>
+            </div>
+        </div>
+        <a class="w3-padding" href="#">جستجوی نیروی کار</a>
+        <div class="w3-accordion">
+            <a onclick="myAccFunc('demoAcc3')" class="w3-padding" href="#">پیام ها <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAcc3" class="w3-accordion-content w3-animate-top w3-blue-grey w3-card-4">
+                <a class="w3-border-bottom" href="#">پیام های دعوت به کار</a>
+                <a class="w3-border-bottom" href="#">پیام های درخواست کار</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="w3-main w3-right-align" style="margin-right: 25%; direction:rtl;">
+    <div class="w3-row" style="direction:rtl">
+        <a href="#" onclick="openCity(event, 'id01');">
+            <div class="w3-third w3-right tablink w3-bottombar w3-hover-light-grey w3-padding">اطلاعات فردی</div>
+        </a>
+        <a href="#" onclick="openCity(event, 'id02');">
+            <div class="w3-third w3-right tablink w3-bottombar w3-hover-light-grey w3-padding">سایر اطلاعات تکمیل کننده</div>
+        </a>
+        <a href="#" onclick="openCity(event, 'id03');">
+            <div class="w3-third w3-right tablink w3-bottombar w3-hover-light-grey w3-padding">اطلاعات ورود به سایت</div>
+        </a>
+    </div>
+
+    <div id="id01" class="info w3-animate-left">
+        <header class="w3-container w3-light-grey" style="direction: rtl;">
+            <h4>کارفرما</h4>
+            <hr class="w3-blue-grey">
+        </header>
+        <form>
+            <div class="w3-row-padding w3-center w3-small w3-light-grey"
+                 style="direction: rtl; width: 100%; margin-top: 0px; margin: auto;">
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;  margin: auto;">
+
+                    <div class="w3-col m6 w3-right">
+                        <label>نام</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <label>نام خانوادگی</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right">
+                        <label>کد ملی</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <label>موبایل</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right">
+                        <label>ایمیل</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <label>تلفن</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+                </div>
+                <br>
+                <div style="margin: auto">
+                    <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
+                           type="submit" value="ثبت" style="height: 20px; text-align: center; padding-top: 2px;">
+                </div>
+                <br>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="id02" class="info w3-animate-left">
+        <header class="w3-container w3-light-grey" style="direction: rtl;">
+            <h4>جزئیات</h4>
+            <hr class="w3-blue-grey">
+        </header>
+        <form>
+            <div class="w3-row-padding w3-center w3-small w3-light-grey"
+                 style="direction: rtl; width: 100%; margin-top: 0px; margin: auto;">
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;  margin: auto;">
+
+                    <div class="w3-col m6 w3-right wrapper" style="padding-right: 40px; padding-left: 40px;">
+                        <label>مقطع تحصیلی</label>
+                        <select class="w3-select w3-round selection" name="option">
+                            <option value="" disabled selected>انتخاب کنید</option>
+                            <option value="1">آموزشی</option>
+                            <option value="2">آزمایشگاه</option>
+                            <option value="3">نمایشگاه</option>
+                            <option value="4">گروه صنعتی</option>
+                            <option value="5">گروه مهندسی</option>
+                            <option value="6">کارشناسی</option>
+                            <option value="7">کارشناسی ارشد</option>
+                            <option value="8">دکترا</option>
+                        </select>
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <label>نام واحد</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right">
+                        <label>کد واحد</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <label>کد بیمه</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right">
+                        <label>نوع مالکیت</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <label>وبسایت</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right">
+                        <label>زمینه فعالیت</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <label>نوع فعالیت</label>
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    </div>
+                </div>
+                <br>
+                <div style="margin: auto">
+                    <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
+                           type="submit" value="ثبت" style="height: 20px; text-align: center; padding-top: 2px;">
+                </div>
+                <br>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="id03" class="info w3-animate-left">
+        <header class="w3-container w3-light-grey" style="direction: rtl;">
+            <h4>تغییر مشخصات کاربری</h4>
+            <hr class="w3-blue-grey">
+        </header>
+        <form>
+
+            <div class="w3-row-padding w3-center w3-small w3-light-grey"
+                 style="direction: rtl; width: 100%; margin-top: 0px; margin: auto;">
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
+                        <label>نام کاربری</label>
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%;">
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
+                        <label>کلمه عبور جاری</label>
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%;">
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
+                        <label>کلمه عبور جدید</label>
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%;">
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
+                        <label>تکرار کلمه عبور</label>
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%;">
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
+                        <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
+                               type="submit" value="ثبت" style="height: 20px; text-align: center; padding-top: 2px;">
+                    </div>
+                </div>
+                <br>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+<script>
+    function openCity(evt, id) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("info");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].classList.remove("w3-border-red");
+        }
+        document.getElementById(id).style.display = "block";
+        evt.currentTarget.firstElementChild.classList.add("w3-border-red");
+    }
+</script>
+
+
+</body>
+</html>
