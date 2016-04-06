@@ -149,9 +149,9 @@
                             <option value="3">نمایشگاه</option>
                             <option value="4">گروه صنعتی</option>
                             <option value="5">گروه مهندسی</option>
-                            <option value="6">کارشناسی</option>
-                            <option value="7">کارشناسی ارشد</option>
-                            <option value="8">دکترا</option>
+                            <option value="6">تاسیسات</option>
+                            <option value="7">تراشکاری</option>
+                            <option value="8">تالار</option>
                         </select>
                     </div>
                     <div class="w3-col m6 w3-right">
@@ -178,9 +178,14 @@
                 <div class="w3-row-padding w3-center w3-small"
                      style="direction: rtl; width: 70%;margin: auto;">
 
-                    <div class="w3-col m6 w3-right">
+                    <div class="w3-col m6 w3-right" style="padding-right: 40px; padding-left: 40px;">
                         <label>نوع مالکیت</label>
-                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                        <select class="w3-select w3-round selection" name="option">
+                            <option value="" disabled selected>انتخاب کنید</option>
+                            <option value="1">تعاونی</option>
+                            <option value="2">خصوصی</option>
+                            <option value="3">دولتی</option>
+                        </select>
                     </div>
                     <div class="w3-col m6 w3-right">
                         <label>وبسایت</label>
@@ -191,9 +196,14 @@
                 <div class="w3-row-padding w3-center w3-small"
                      style="direction: rtl; width: 70%;margin: auto;">
 
-                    <div class="w3-col m6 w3-right">
+                    <div class="w3-col m6 w3-right" style="padding-right: 40px; padding-left: 40px;">
                         <label>زمینه فعالیت</label>
-                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                        <select class="w3-select w3-round selection" name="option">
+                            <option value="" disabled selected>انتخاب کنید</option>
+                            <option value="1">خدماتی</option>
+                            <option value="2">کشاورزی</option>
+                            <option value="3">صنعتی</option>
+                        </select>
                     </div>
                     <div class="w3-col m6 w3-right">
                         <label>نوع فعالیت</label>
@@ -292,6 +302,10 @@
         }
         document.getElementById(id).style.display = "block";
         evt.currentTarget.firstElementChild.classList.add("w3-border-red");
+    }
+    function myAccFunc(id) {
+        document.getElementById(id).classList.toggle("w3-show");
+        document.getElementById(id).previousElementSibling.classList.toggle("w3-teal");
     }
 </script>
 
