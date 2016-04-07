@@ -18,20 +18,20 @@
                 <i class="fa fa-home w3-large"></i>
             </a>
         </li>
+        <li class="w3-right">
+            <a href="/karpuportal/jobopportunity.html">فرصت های شغلی</a>
+        </li>
         <li class="w3-right w3-teal">
-            <a href="#">فرصت های شغلی</a>
+            <a href="/karpuportal/jobseeker.html">کارجویان</a>
         </li>
         <li class="w3-right">
-            <a href="#">کارجویان</a>
+            <a href="/karpuportal/about.html">درباره ما</a>
         </li>
-        <li class="w3-right">
-            <a href="#">درباره ما</a>
-        </li>
-        <li class="w3-left"><a href="#" title="ورود">
+        <li class="w3-left"><a href="/karpuportal/login.html" title="ورود">
             <i class="fa fa-sign-in w3-large"></i></a>
         </li>
         <li class="w3-left">
-            <a href="#" title="عضویت">
+            <a href="/karpuportal/register.html" title="عضویت">
                 <i class="fa fa-male w3-large"></i>
             </a>
         </li>
@@ -50,7 +50,7 @@
 
             <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
                 <label>مقطع تحصیلی</label>
-                <select class="w3-select w3-round" name="option">
+                <select class="w3-select w3-round" name="gradeId">
                     <option value="" disabled selected>انتخاب کنید</option>
                     <option value="1">بی سواد</option>
                     <option value="2">ابتدایی</option>
@@ -64,7 +64,7 @@
             </div>
             <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
                 <label>رشته</label>
-                <select class="w3-select w3-round" name="option">
+                <select class="w3-select w3-round" name="majorId">
                     <option value="" disabled selected>انتخاب کنید</option>
                     <option value="1">مهندسی کامپیوتر</option>
                     <option value="2">مکانیک سیالات</option>
@@ -74,7 +74,7 @@
             </div>
             <div class="w3-col m4 w3-right">
                 <label>گرایش</label>
-                <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+                <input class="w3-input w3-round" name="fieldId" type="text" style="height: 30px; width: 70%; margin: auto;">
             </div>
         </div>
         <br><br>
@@ -83,15 +83,15 @@
 
             <div class="w3-col m4 w3-right">
                 <label>مهارت</label>
-                <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+                <input class="w3-input w3-round" name="skillId" type="text" style="height: 30px; width: 70%; margin: auto;">
             </div>
             <div class="w3-col m4 w3-right">
                 <label>شغل درخواستی</label>
-                <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+                <input class="w3-input w3-round" name="requestedJobId" type="text" style="height: 30px; width: 70%; margin: auto;">
             </div>
             <div class="w3-col m4 w3-right">
                 <label>سابقه شغلی</label>
-                <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+                <input class="w3-input w3-round" name="historyJobId" type="text" style="height: 30px; width: 70%; margin: auto;">
             </div>
         </div>
         <br><br>
@@ -100,7 +100,7 @@
 
             <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
                 <label>استان</label>
-                <select class="w3-select w3-round" name="option">
+                <select class="w3-select w3-round" name="stateId">
                     <option value="" disabled selected>انتخاب کنید</option>
                     <option value="1">تهران</option>
                     <option value="2">آذربایجان شرقی</option>
@@ -110,11 +110,11 @@
             </div>
             <div class="w3-col m4 w3-right">
                 <label>شهر</label>
-                <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+                <input class="w3-input w3-round" name="cityId" type="text" style="height: 30px; width: 70%; margin: auto;">
             </div>
             <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
                 <label>جنسیت</label>
-                <select class="w3-select w3-round" name="option">
+                <select class="w3-select w3-round" name="gender">
                     <option value="" disabled selected>انتخاب کنید</option>
                     <option value="1">مرد</option>
                     <option value="2">زن</option>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>جستجو فرصت شغلی</title>
+<title>سوابق تحصیلی</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -29,25 +29,25 @@
             <a onclick="myAccFunc('demoAcc1')" class="w3-padding" href="#">ثبت اطلاعات <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc1" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="#">اطلاعات فردی</a>
-                <a class="w3-border-bottom" href="#">سوابق کاری</a>
-                <a class="w3-border-bottom" href="#">سوابق تحصیلی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/personalinformation.html">اطلاعات فردی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/jobexperience.html">سوابق کاری</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/educationalBackground.html">سوابق تحصیلی</a>
             </div>
         </div>
         <div class="w3-accordion">
             <a onclick="myAccFunc('demoAcc2')" class="w3-padding" href="#">فرصت شغلی <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc2" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="#">مشاغل درخواستی</a>
-                <a class="w3-border-bottom" href="#">جستجو در فرصت های شغلی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/requestedjob.html">مشاغل درخواستی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/findjob.html">جستجو در فرصت های شغلی</a>
             </div>
         </div>
         <div class="w3-accordion">
             <a onclick="myAccFunc('demoAcc3')" class="w3-padding" href="#">پیام ها <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc3" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="#">پیام های دعوت به کار</a>
-                <a class="w3-border-bottom" href="#">پیام های درخواست کار</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/invitation.html">پیام های دعوت به کار</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/requestedjobmessage.html">پیام های درخواست کار</a>
             </div>
         </div>
     </nav>
@@ -55,7 +55,7 @@
 
 <div class="w3-main w3-right-align" style="margin-right: 25%; direction:rtl;">
     <header class="w3-container w3-light-grey" style="direction: rtl;">
-        <h4>جستجو</h4>
+        <h4>سوابق تحصیلی</h4>
         <hr class="w3-blue-grey">
     </header>
 
@@ -66,76 +66,21 @@
             <div class="w3-row-padding w3-center w3-small"
                  style="direction: rtl; width: 70%;  margin: auto;">
 
-                <div class="w3-col m4 w3-right">
-                    <label>عنوان شغلی</label>
-                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
-                </div>
-                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
-                    <label>استان</label>
-                    <select class="w3-select w3-round" name="state">
-                            <option value="">انتخاب کنید</option>
-                            <option value="4400">آذربایجان شرقی</option>
-                            <option value="4520">آذربایجان غربی</option>
-                            <option value="4970">اردبیل</option>
-                            <option value="3676">اصفهان</option>
-                            <option value="4605">ایلام</option>
-                            <option value="4680">بوشهر</option>
-                            <option value="4921">تهران</option>
-                            <option value="4186">چهارمحال و بختیاری</option>
-                            <option value="5179">خراسان جنوبی</option>
-                            <option value="3538">خراسان رضوی</option>
-                            <option value="5143">خراسان شمالی</option>
-                            <option value="3326">خوزستان</option>
-                            <option value="4736">زنجان</option>
-                            <option value="4776">سمنان</option>
-                            <option value="3832">سیستان و بلوچستان</option>
-                            <option value="3108">فارس</option>
-                            <option value="5038">قزوین</option>
-                            <option value="5026">قم</option>
-                            <option value="5087">گلستان</option>
-                            <option value="4077">گیلان</option>
-                            <option value="4236">لرستان</option>
-                            <option value="4295">مازندران</option>
-                            <option value="4022">مرکزی</option>
-                            <option value="4861">هرمزگان</option>
-                            <option value="3966">همدان</option>
-                            <option value="5219">کرج</option>
-                            <option value="3907">کردستان</option>
-                            <option value="3433">کرمان</option>
-                            <option value="3260">کرمانشاه</option>
-                            <option value="4648">کهگیلویه و بویراحمد</option>
-                            <option value="4809">یزد</option>
-                    </select>
-                </div>
-                <div class="w3-col m4 w3-right">
-                    <label>شهر</label>
-                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
-                </div>
-            </div>
-            <br><br>
-            <div class="w3-row-padding w3-center w3-small"
-                 style="direction: rtl; width: 70%;margin: auto;">
-
-                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                <div class="w3-col m6 w3-right" style="padding-right: 40px; padding-left: 40px;">
                     <label>مقطع تحصیلی</label>
-                    <select class="w3-select w3-round" name="gradeID">
-                        <option value="">انتخاب کنید</option>
-                        <option value="3">ابتدایی</option>
-                        <option value="1">بیسواد</option>
-                        <option value="11">تحصیلات حوزوی</option>
-                        <option value="2">خواندن-نوشتن</option>
-                        <option value="10">دکترا</option>
-                        <option value="6">دیپلم و پیش دانشگاهی</option>
-                        <option value="4">راهنمایی</option>
-                        <option value="12">غیر رسمی</option>
-                        <option value="7">کاردانی</option>
-                        <option value="8">کارشناسی</option>
-                        <option value="9">کارشناسی ارشد</option>
-                        <option value="5">متوسطه</option>
-
+                    <select class="w3-select w3-round" name="gradeId">
+                        <option value="" disabled selected>انتخاب کنید</option>
+                        <option value="1">بی سواد</option>
+                        <option value="2">ابتدایی</option>
+                        <option value="3">راهنمایی</option>
+                        <option value="4">دیپلم</option>
+                        <option value="5">فوق دیپلم</option>
+                        <option value="6">کارشناسی</option>
+                        <option value="7">کارشناسی ارشد</option>
+                        <option value="8">دکترا</option>
                     </select>
                 </div>
-                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                <div class="w3-col m6 w3-right" style="padding-right: 40px; padding-left: 40px;">
                     <label>رشته تحصیلی</label>
                     <select class="w3-select w3-round" name="majorID">
                         <option value="">انتخاب کنید</option>
@@ -509,81 +454,215 @@
 
                     </select>
                 </div>
-                <div class="w3-col m4 w3-right">
-                    <label>گرایش تحصیلی</label>
-                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
-                </div>
+
             </div>
-            <br><br>
+            <br>
             <div class="w3-row-padding w3-center w3-small"
                  style="direction: rtl; width: 70%;margin: auto;">
 
-                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
-                    <label>نوع حقوق</label>
-                    <select class="w3-select w3-round" name="SalaryTypeID" id="SalaryTypeID" onchange="showWage()" name="option">
-                        <option value="" disabled selected>انتخاب کنید</option>
-                        <option value="1">توافقی</option>
-                        <option value="2">حداقل حقوق</option>
-                        <option value="3">طبق قانون کار</option>
-                    </select>
+                <div class="w3-col m6 w3-right">
+                    <label>گرایش</label>
+                    <input class="w3-input w3-round" type="text" name="fieldId" style="height: 30px; width: 76%; margin: auto;">
                 </div>
-                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
-                    <label>جنسیت</label>
-                    <select class="w3-select w3-round" name="option">
-                        <option value="" disabled selected>انتخاب کنید</option>
-                        <option value="1">مرد</option>
-                        <option value="2">زن</option>
-                    </select>
+                <div class="w3-col m6 w3-right">
+                    <label>نام دانشگاه</label>
+                    <input class="w3-input w3-round" type="text" name="universityNameId" style="height: 30px; width: 76%; margin: auto;">
                 </div>
-                <div id="salary" class="w3-col m4 w3-right" style="display: none;">
-                    <label>حداقل حقوق</label>
-                    <input class="w3-input w3-round"
-                           type="text" name="minWage" style="height: 30px; width: 70%; margin: auto;">
-                </div>
+
             </div>
-            <br><br>
-            <div style="margin: auto;">
+            <br>
+            <div class="w3-row-padding w3-center w3-small"
+                 style="direction: rtl; width: 70%;margin: auto;">
+
+                <div class="w3-col m6 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                    <label>نوع دانشگاه</label>
+                    <select class="w3-select w3-round" name="universityTypeId">
+                        <option value="" disabled selected>انتخاب کنید</option>
+                        <option value="1">پیام نور</option>
+                        <option value="2">دانشگاه آزاد</option>
+                        <option value="3">دولتی</option>
+                        <option value="4">نیمه دولتی</option>
+                        <option value="5">علمی کاربردی</option>
+                    </select>
+                </div>
+                <div class="w3-col m6 w3-right">
+                    <label>معدل</label>
+                    <input class="w3-input w3-round" type="averageId" style="height: 30px; width: 76%; margin: auto;">
+                </div>
+
+            </div>
+            <br>
+            <div class="w3-row-padding w3-center w3-small"
+                 style="direction: rtl; width: 70%;margin: auto;">
+
+                <div class="w3-col m6 w3-right">
+                    <label>تاریخ فارغ تحصیلی</label>
+                    <input class="w3-input w3-round" type="graduationDate" style="height: 30px; width: 76%; margin: auto;">
+                </div>
+                <div class="w3-col m6 w3-right">
+                    <label>تعداد واحد گذرانده</label>
+                    <input class="w3-input w3-round" type="text" name="unitPassedNum" style="height: 30px; width: 76%; margin: auto;">
+                </div>
+
+            </div>
+            <br>
+            <div class="w3-row-padding w3-center w3-small"
+                 style="direction: rtl; width: 80%;margin: auto;">
+
+                <div class="w3-col m4 w3-right" style="padding-right: 90px; ">
+                    <label>استان</label>
+                    <select class="w3-select w3-round" name="state">
+                        <option value="">انتخاب کنید</option>
+                        <option value="4400">آذربایجان شرقی</option>
+                        <option value="4520">آذربایجان غربی</option>
+                        <option value="4970">اردبیل</option>
+                        <option value="3676">اصفهان</option>
+                        <option value="4605">ایلام</option>
+                        <option value="4680">بوشهر</option>
+                        <option value="4921">تهران</option>
+                        <option value="4186">چهارمحال و بختیاری</option>
+                        <option value="5179">خراسان جنوبی</option>
+                        <option value="3538">خراسان رضوی</option>
+                        <option value="5143">خراسان شمالی</option>
+                        <option value="3326">خوزستان</option>
+                        <option value="4736">زنجان</option>
+                        <option value="4776">سمنان</option>
+                        <option value="3832">سیستان و بلوچستان</option>
+                        <option value="3108">فارس</option>
+                        <option value="5038">قزوین</option>
+                        <option value="5026">قم</option>
+                        <option value="5087">گلستان</option>
+                        <option value="4077">گیلان</option>
+                        <option value="4236">لرستان</option>
+                        <option value="4295">مازندران</option>
+                        <option value="4022">مرکزی</option>
+                        <option value="4861">هرمزگان</option>
+                        <option value="3966">همدان</option>
+                        <option value="5219">کرج</option>
+                        <option value="3907">کردستان</option>
+                        <option value="3433">کرمان</option>
+                        <option value="3260">کرمانشاه</option>
+                        <option value="4648">کهگیلویه و بویراحمد</option>
+                        <option value="4809">یزد</option>
+                    </select>
+                </div>
+
+            </div>
+            <br>
+            <div style="margin: auto">
                 <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
-                       type="submit" value="جستجو" style="height: 30px;">
+                       type="submit" value="ثبت" style="height: 20px; text-align: center; padding-top: 2px;">
             </div>
             <br>
         </div>
 
     </form>
 
-    <div class="w3-responsive" style="direction: rtl;">
-        <table class="w3-table w3-striped w3-bordered w3-border-top w3-border-bottom w3-hoverable">
-            <thead>
-            <tr class="w3-grey">
-                <th class="w3-right-align">شماره شغل</th>
-                <th class="id01 w3-right-align">عنوان شغل</th>
-                <th class="w3-right-align">کاریابی</th>
-                <th class="w3-right-align">جنسیت</th>
-                <th class="w3-right-align">استان</th>
-                <th class="w3-right-align">محدوده</th>
-                <th class="w3-right-align">نوع حقوق</th>
-                <th class="w3-right-align">حقوق</th>
-            </tr>
-            </thead>
-
-            <tbody>
-            <tr>
-                <td class="w3-right-align">رکوردی برای نمایش وجود ندارد </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
 </div>
 
 <!-- username modal -->
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top" style="width: 50%">
+        <header class="w3-container w3-blue-grey" >
+            <span onclick="document.getElementById('id02').style.display='none'" class="w3-closebtn">
+                ×
+            </span>
+            <h2 class="w3-center">تکمیل اطلاعات</h2>
+        </header>
+        <div>
+            <header class="w3-light-grey w3-padding">
+                <p class="w3-right-align w3-center">تغییر نام کاربری</p>
+                <hr class="w3-black">
+            </header>
+            <div class="w3-row-padding  w3-center w3-small w3-light-grey"
+                 style="direction: rtl; width: 100%; margin-top: 0px; margin: auto;">
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right w3-padding-bottom" style="padding-top: 2px;width: 30%;">
+                        <label>نام کاربری</label>
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%;">
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
+                        <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
+                               type="submit" value="ثبت" style="height: 20px; text-align: center; padding-top: 2px;">
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- password modal -->
+<div id="id03" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top" style="width: 50%">
+        <header class="w3-container w3-blue-grey" >
+            <span onclick="document.getElementById('id03').style.display='none'" class="w3-closebtn">
+                ×
+            </span>
+            <h2 class="w3-center">تکمیل اطلاعات</h2>
+        </header>
+        <form>
+            <header class="w3-light-grey w3-padding">
+                <p class="w3-right-align w3-center">تغییر رمز عبور</p>
+                <hr class="w3-black">
+            </header>
+            <div class="w3-row-padding  w3-center w3-small w3-light-grey"
+                 style="direction: rtl; width: 100%; margin-top: 0px; margin: auto;">
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right w3-padding-bottom" style="padding-top: 2px;width: 30%;">
+                        <label>کلمه عبور قدیمی</label>
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%;">
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right w3-padding-bottom" style="padding-top: 2px;width: 30%;">
+                        <label>کلمه عبور جدید</label>
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%;">
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right w3-padding-bottom" style="padding-top: 2px;width: 30%;">
+                        <label>تکرار کلمه عبور</label>
+                    </div>
+                    <div class="w3-col m6 w3-right">
+                        <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%;">
+                    </div>
+                </div>
+                <br>
+                <div class="w3-row-padding w3-center w3-small"
+                     style="direction: rtl; width: 70%;margin: auto;">
+
+                    <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
+                        <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
+                               type="submit" value="ثبت" style="height: 20px; text-align: center; padding-top: 2px;">
+                    </div>
+                </div>
+                <br>
+            </div>
+        </form>
+    </div>
+</div><!-- username modal -->
 <div id="id04" class="w3-modal">
     <div class="w3-modal-content w3-animate-top" style="width: 50%">
         <header class="w3-container w3-blue-grey" >
@@ -690,21 +769,6 @@
     function myAccFunc(id) {
         document.getElementById(id).classList.toggle("w3-show");
         document.getElementById(id).previousElementSibling.classList.toggle("w3-teal");
-    }
-
-    function showWage() {
-        var e = document.getElementById("SalaryTypeID");
-        var element = document.getElementById("salary");
-        var element1 = document.getElementById("salarybreak")
-        var val = e.options[e.selectedIndex].value;
-        if (val == 2) {
-            element.style.display = "block";
-            element1.style.display = "block";
-        }
-        else {
-            element.style.display = "none";
-            element1.style.display = "none";
-        }
     }
 
 </script>

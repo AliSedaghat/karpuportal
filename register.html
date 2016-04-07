@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>کارپو</title>
+    <title>ثبت نام</title>
 </head>
 
 <body id="myPage" class="w3-light-grey">
@@ -19,19 +19,19 @@
             </a>
         </li>
         <li class="w3-right">
-            <a href="#">فرصت های شغلی</a>
+            <a href="/karpuportal/jobopportunity.html">فرصت های شغلی</a>
         </li>
         <li class="w3-right">
-            <a href="#">کارجویان</a>
+            <a href="/karpuportal/jobseeker.html">کارجویان</a>
         </li>
         <li class="w3-right">
-            <a href="#">درباره ما</a>
+            <a href="/karpuportal/about.html">درباره ما</a>
         </li>
-        <li class="w3-left"><a href="#" title="ورود">
+        <li class="w3-left"><a href="/karpuportal/login.html" title="ورود">
             <i class="fa fa-sign-in w3-large"></i></a>
         </li>
-        <li class="w3-left">
-            <a href="#" title="عضویت">
+        <li class="w3-left w3-teal">
+            <a href="/karpuportal/register.html" title="عضویت">
                 <i class="fa fa-male w3-large"></i>
             </a>
         </li>
@@ -43,31 +43,31 @@
             w3-margin-bottom w3-white w3-card-4"
      style="margin: auto; width: 50%;">
 
-    <form class="w3-container">
+    <form class="w3-container" method="post">
         <p>
-            <input class="w3-input" type="text" style="direction: rtl" required>
+            <input class="w3-input" type="text" name="usernameId" style="direction: rtl" required>
             <label class="w3-label">نام کاربری</label></p>
         <p>
-            <input class="w3-input" type="password" style="direction: rtl" required>
+            <input class="w3-input" type="password" name="passwordId" style="direction: rtl" required>
             <label class="w3-label">رمز عبور</label></p>
         <p>
-            <input class="w3-input" type="text" style="direction: rtl" required>
+            <input class="w3-input" type="text" name="emailId" style="direction: rtl" required>
             <label class="w3-label">ایمیل</label>
         </p>
 
         <p>
             <label class="w3-validate">کارفرما</label>
-            <input class="w3-radio" type="radio" name="person" value="karfarma" checked>
+            <input class="w3-radio" type="radio" name="employerId" value="karfarma" checked>
         </p>
 
         <p>
             <label class="w3-validate">کارجو</label>
-            <input class="w3-radio" type="radio" name="person" value="karjo">
+            <input class="w3-radio" type="radio" name="employeeId" value="karjo">
         </p>
 
 
         <p>
-            <button class="w3-btn w3-section w3-teal w3-ripple w3-center">ثبت نام</button></p>
+            <input class="w3-btn w3-section w3-teal w3-ripple w3-center" type="submit" value="ثبت نام"></p>
 
     </form>
 
