@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<body>
+
+<div>
+    <ul class="w3-navbar w3-card-2 w3-dark-grey">
+        <li class="w3-right w3-padding-right"><h3>پنل کارجو</h3></li>
+        <li class="w3-dropdown-hover w3-padding-top w3-left">
+            <a href="#">کاربر <i class="fa fa-caret-down"></i></a>
+            <div class="w3-dropdown-content w3-blue-grey w3-right-align">
+                <a href="#">تغییر نام کاربری</a>
+                <a href="#">تغییر کلمه عبور</a>
+                <a href="#">تکمیل اطلاعات تماسی</a>
+                <a href="#">خروج</a>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<div style="direction: rtl;">
+    <nav class="w3-sidenav w3-blue-grey" style="width:25%;">
+        <div class="w3-accordion">
+            <a onclick="myAccFunc('demoAcc1')" class="w3-padding" href="#">ثبت اطلاعات <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAcc1" class="w3-accordion-content w3-animate-top w3-blue-grey">
+                <a class="w3-border-bottom" href="#">اطلاعات فردی</a>
+                <a class="w3-border-bottom" href="#">سوابق کاری</a>
+                <a class="w3-border-bottom" href="#">سوابق تحصیلی</a>
+            </div>
+        </div>
+        <div class="w3-accordion">
+            <a onclick="myAccFunc('demoAcc2')" class="w3-padding" href="#">فرصت شغلی <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAcc2" class="w3-accordion-content w3-animate-top w3-blue-grey">
+                <a class="w3-border-bottom" href="#">مشاغل درخواستی</a>
+                <a class="w3-border-bottom" href="#">جستجو در فرصت های شغلی</a>
+            </div>
+        </div>
+        <div class="w3-accordion">
+            <a onclick="myAccFunc('demoAcc3')" class="w3-padding" href="#">پیام ها <i class="fa fa-caret-down"></i>
+            </a>
+            <div id="demoAcc3" class="w3-accordion-content w3-animate-top w3-blue-grey">
+                <a class="w3-border-bottom" href="#">پیام های دعوت به کار</a>
+                <a class="w3-border-bottom" href="#">پیام های درخواست کار</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="w3-main w3-right-align" style="margin-right: 25%; direction:rtl;">
+    <header class="w3-container w3-light-grey" style="direction: rtl;">
+        <h4>جستجو</h4>
+        <hr class="w3-blue-grey">
+    </header>
+
+    <form>
+
+        <div class="w3-row-padding w3-center w3-small w3-light-grey"
+             style="direction: rtl; width: 100%; margin-top: 0px; margin: auto;">
+            <div class="w3-row-padding w3-center w3-small"
+                 style="direction: rtl; width: 70%;  margin: auto;">
+
+                <div class="w3-col m4 w3-right">
+                    <label>عنوان شغلی</label>
+                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+                </div>
+                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                    <label>استان</label>
+                    <select class="w3-select w3-round" name="state">
+                            <option value="">انتخاب کنید</option>
+                            <option value="4400">آذربایجان شرقی</option>
+                            <option value="4520">آذربایجان غربی</option>
+                            <option value="4970">اردبیل</option>
+                            <option value="3676">اصفهان</option>
+                            <option value="4605">ایلام</option>
+                            <option value="4680">بوشهر</option>
+                            <option value="4921">تهران</option>
+                            <option value="4186">چهارمحال و بختیاری</option>
+                            <option value="5179">خراسان جنوبی</option>
+                            <option value="3538">خراسان رضوی</option>
+                            <option value="5143">خراسان شمالی</option>
+                            <option value="3326">خوزستان</option>
+                            <option value="4736">زنجان</option>
+                            <option value="4776">سمنان</option>
+                            <option value="3832">سیستان و بلوچستان</option>
+                            <option value="3108">فارس</option>
+                            <option value="5038">قزوین</option>
+                            <option value="5026">قم</option>
+                            <option value="5087">گلستان</option>
+                            <option value="4077">گیلان</option>
+                            <option value="4236">لرستان</option>
+                            <option value="4295">مازندران</option>
+                            <option value="4022">مرکزی</option>
+                            <option value="4861">هرمزگان</option>
+                            <option value="3966">همدان</option>
+                            <option value="5219">کرج</option>
+                            <option value="3907">کردستان</option>
+                            <option value="3433">کرمان</option>
+                            <option value="3260">کرمانشاه</option>
+                            <option value="4648">کهگیلویه و بویراحمد</option>
+                            <option value="4809">یزد</option>
+                    </select>
+                </div>
+                <div class="w3-col m4 w3-right">
+                    <label>شهر</label>
+                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+                </div>
+            </div>
+            <br><br>
+            <div class="w3-row-padding w3-center w3-small"
+                 style="direction: rtl; width: 70%;margin: auto;">
+
+                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                    <label>مقطع تحصیلی</label>
+                    <select class="w3-select w3-round" name="gradeID">
+                        <option value="">انتخاب کنید</option>
+                        <option value="3">ابتدایی</option>
+                        <option value="1">بیسواد</option>
+                        <option value="11">تحصیلات حوزوی</option>
+                        <option value="2">خواندن-نوشتن</option>
+                        <option value="10">دکترا</option>
+                        <option value="6">دیپلم و پیش دانشگاهی</option>
+                        <option value="4">راهنمایی</option>
+                        <option value="12">غیر رسمی</option>
+                        <option value="7">کاردانی</option>
+                        <option value="8">کارشناسی</option>
+                        <option value="9">کارشناسی ارشد</option>
+                        <option value="5">متوسطه</option>
+
+                    </select>
+                </div>
+                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                    <label>رشته تحصیلی</label>
+                    <select class="w3-select w3-round" name="majorID">
+                        <option value="">انتخاب کنید</option>
+                        <option value="13200">BCA</option>
+                        <option value="13229">GIS/RS</option>
+                        <option value="12656">ICT (فناوری اطلاعات و ارتباطات)</option>
+                        <option value="12522">IT (فناوری اطلاعات)</option>
+                        <option value="5264">آب و فاضلاب </option>
+                        <option value="14280">آتش نشانی</option>
+                        <option value="13180">آسانسور</option>
+                        <option value="12806">آسیب شناسی اجتماعی</option>
+                        <option value="12533">آمار</option>
+                        <option value="14114">آموزش ابتدایی</option>
+                        <option value="5267">آموزش عالی</option>
+                        <option value="5270">آموزشی و پژوهشی مهندسی مکانیک </option>
+                        <option value="14121">اتو مکانیک</option>
+                        <option value="5273">ارتباطات اجتماعی </option>
+                        <option value="5276">اطلاعات و عملیات در صحنه</option>
+                        <option value="12759">اقتصاد</option>
+                        <option value="12524">اقتصاد بازرگانی</option>
+                        <option value="5281">اقتصاد بین الملل</option>
+                        <option value="5283">اقتصاد شهری</option>
+                        <option value="12685">الهیات</option>
+                        <option value="5285">الکتروتکنیک</option>
+                        <option value="5288">الکترونیک </option>
+                        <option value="13357">الکتریک </option>
+                        <option value="13496">امداد و نجات</option>
+                        <option value="12672">امور اداری</option>
+                        <option value="5290">امور اقامتی</option>
+                        <option value="12635">امور بانکی</option>
+                        <option value="12738">امور بیمه</option>
+                        <option value="5292">امور دامی </option>
+                        <option value="5295">امور زراعی</option>
+                        <option value="5298">امور زراعی و باغی</option>
+                        <option value="12825">امور گمرکی</option>
+                        <option value="5303">انکهای سری تی</option>
+                        <option value="5305">انیمیشن</option>
+                        <option value="14279">اویونیک</option>
+                        <option value="12777">ایران شناسی</option>
+                        <option value="14251">ایمنی صنعتی</option>
+                        <option value="13704">ایمنی و بهداشت</option>
+                        <option value="13184">ایمنی و بهداشت صنوف</option>
+                        <option value="12827">بازاریابی</option>
+                        <option value="12498">بازرگانی</option>
+                        <option value="12688">باستان شناسی</option>
+                        <option value="5307">باغبانی </option>
+                        <option value="13572">بانکداری</option>
+                        <option value="5329">برق</option>
+                        <option value="13238">برق خودرو</option>
+                        <option value="14324">برنامه ریزی مدیریت و آموزش محیط زیست</option>
+                        <option value="16544">بهداشت</option>
+                        <option value="16549">بهداشت</option>
+                        <option value="12654">بهداشت حرفه ای</option>
+                        <option value="5341">بهداشت عمومی </option>
+                        <option value="12721">بهداشت محیط</option>
+                        <option value="12677">بیهوشی اتاق عمل (هوش بری)</option>
+                        <option value="13133">بیو انفورماتیک</option>
+                        <option value="12697">بیوتکنولوژی</option>
+                        <option value="12703">بیوشیمی</option>
+                        <option value="12836">بیولوژی</option>
+                        <option value="12993">بیومکانیک ورزشی</option>
+                        <option value="12676">پرستاری</option>
+                        <option value="14450">پرورش زنبور عسل</option>
+                        <option value="12617">پزشکی</option>
+                        <option value="14239">پژوهش هنر</option>
+                        <option value="5347">تاتر </option>
+                        <option value="5350">تاریخ </option>
+                        <option value="12643">تاسیسات</option>
+                        <option value="5352">تانک اسکورپیون </option>
+                        <option value="5356">تانک چیفتن </option>
+                        <option value="14478">تجهیزات آزمایشگاهی</option>
+                        <option value="5358">تجهیزات پروازی </option>
+                        <option value="5360">تجهیزات سوخت مایع </option>
+                        <option value="5362">تجهیزات سوخت هوایی </option>
+                        <option value="14323">تحقیقات آموزشی</option>
+                        <option value="12845">تراشکاری</option>
+                        <option value="14482">ترافیک</option>
+                        <option value="14483">ترافیک</option>
+                        <option value="16512">ترافیک شهری</option>
+                        <option value="16555">تربیت بدنی</option>
+                        <option value="5364">تربیت بدنی و علوم ورزشی</option>
+                        <option value="5368">تربیت مربی </option>
+                        <option value="5371">تربیت مربی عقیدتی </option>
+                        <option value="5373">تربیت مربی عقیدتی سیاسی ملل اسلامی </option>
+                        <option value="12848">تربیت معلم</option>
+                        <option value="5376">تربیت معلم رشد و پرورش کودکان پیش دبستانی</option>
+                        <option value="12785">تصویر برداری</option>
+                        <option value="16495">تصویر سازی</option>
+                        <option value="13052">تعمیر لوازم خانگی</option>
+                        <option value="14253">تعمیر و نگهداری هواپیما</option>
+                        <option value="13195">تغذیه</option>
+                        <option value="15494">تغذیه دام</option>
+                        <option value="5379">توپ زمین به هوا </option>
+                        <option value="5381">تولید غلات </option>
+                        <option value="14117">تولیدات گیاهی</option>
+                        <option value="5383">تکثیر و پرورش آبزیان</option>
+                        <option value="15488">تکنولوژی پرورش دام</option>
+                        <option value="15491">تکنولوژی تولیدات باغبانی</option>
+                        <option value="13649">تکنولوژی جوشکاری</option>
+                        <option value="15489">تکنولوژی شیلات</option>
+                        <option value="5386">تکنولوژی صنایع قندسازی </option>
+                        <option value="5389">تکنولوژی هسته‌ای</option>
+                        <option value="12662">جامعه شناسی</option>
+                        <option value="5392">جغرافیا</option>
+                        <option value="5400">جغرافیای طبیعی </option>
+                        <option value="5404">جغرافیای طبیعی و انسانی</option>
+                        <option value="5410">جغرافیایی شهری</option>
+                        <option value="5412">جنگ افزار تانک تی 72</option>
+                        <option value="5414">جنگ افزارهای سبک</option>
+                        <option value="5416">جنگ‌ افزارهای زمینی</option>
+                        <option value="5418">جنگ‌افزارهای سبک پیاده</option>
+                        <option value="12558">جهانگردی</option>
+                        <option value="12858">جوشکاری</option>
+                        <option value="5420">چاپ </option>
+                        <option value="14313">چهره پردازی </option>
+                        <option value="12706">حج و زیارت</option>
+                        <option value="5426">حسابداری</option>
+                        <option value="5430">حسابداری بازرگانی</option>
+                        <option value="14301">حسابداری دولتی</option>
+                        <option value="5759">حقوق </option>
+                        <option value="12865">خبرنگاری</option>
+                        <option value="13202">خدمات پستی</option>
+                        <option value="12742">داروسازی</option>
+                        <option value="13026">دامپروری</option>
+                        <option value="12640">دامپزشکی</option>
+                        <option value="5432">دبیر فنی برق </option>
+                        <option value="5435">دبیر فنی عمران </option>
+                        <option value="13497">در و پنجره سازی</option>
+                        <option value="13188">درودگری</option>
+                        <option value="5437">دریانوردی</option>
+                        <option value="5441">دستگاه‌های فنی یگان‌های شناور</option>
+                        <option value="12871">دندانپزشکی</option>
+                        <option value="14487">دیپلم فنی </option>
+                        <option value="14287">دیپلم کفاشی</option>
+                        <option value="5443">دیپلماسی و سازمان‌های بین‌المللی </option>
+                        <option value="12716">رادیولوژی</option>
+                        <option value="13665">راه و ساختمان</option>
+                        <option value="5453">رهاساز خلبان</option>
+                        <option value="12732">روابط بین الملل</option>
+                        <option value="12876">روابط سیاسی</option>
+                        <option value="12620">روابط عمومی</option>
+                        <option value="12494">روانشناسی</option>
+                        <option value="12882">روزنامه نگاری</option>
+                        <option value="13252">ریاضی</option>
+                        <option value="5455">ریاضی محض </option>
+                        <option value="12680">ریاضی و فیزیک</option>
+                        <option value="5459">ریاضی کاربردی </option>
+                        <option value="12886">ریخته گری</option>
+                        <option value="12889">زبان آلمانی</option>
+                        <option value="13207">زبان ارمنی</option>
+                        <option value="12890">زبان اسپانیایی</option>
+                        <option value="12433">زبان انگلیسی</option>
+                        <option value="12895">زبان ایتالیایی</option>
+                        <option value="13137">زبان ژاپنی</option>
+                        <option value="13216">زبان شناسی</option>
+                        <option value="5461">زبان فرانسه </option>
+                        <option value="14269">زبان و ادبیات اردو</option>
+                        <option value="5464">زبان و ادبیات عربی</option>
+                        <option value="5466">زبان و ادبیات فارسی </option>
+                        <option value="5468">زراعت </option>
+                        <option value="5484">زمین شناسی </option>
+                        <option value="5486">زیست شناسی </option>
+                        <option value="5496">زیست شناسی سلولی و مولکولی </option>
+                        <option value="5498">ژئوفیزیک </option>
+                        <option value="13257">ژنتیک</option>
+                        <option value="5500">ساخت و تولید </option>
+                        <option value="13942">ساختمان</option>
+                        <option value="12783">سرامیک و سفالگری</option>
+                        <option value="5503">سیستم‌های اقتصادی</option>
+                        <option value="5505">سیستم‌های انرژی</option>
+                        <option value="13646">سیم پیچی</option>
+                        <option value="5507">سینما</option>
+                        <option value="12918">شهر سازی</option>
+                        <option value="12922">شیلات</option>
+                        <option value="5512">شیمی</option>
+                        <option value="5515">شیمی آزمایشگاهی </option>
+                        <option value="5519">صنایع</option>
+                        <option value="5522">صنایع بالا دستی نفت </option>
+                        <option value="5526">صنایع چوب </option>
+                        <option value="5529">صنایع چوب و کاغذ </option>
+                        <option value="12551">صنایع دستی</option>
+                        <option value="13117">صنایع شیمیایی</option>
+                        <option value="12628">صنایع غذایی</option>
+                        <option value="5531">صنایع فلزی </option>
+                        <option value="5534">صنایع قندسازی</option>
+                        <option value="5537">صنایع نساجی </option>
+                        <option value="5539">صنعت سیمان </option>
+                        <option value="13663">طراحی</option>
+                        <option value="13059">طراحی دوخت</option>
+                        <option value="12691">طراحی دکوراسیون داخلی</option>
+                        <option value="13931">طراحی سیستم های تعلیق فرمان و ترمز</option>
+                        <option value="13103">طراحی شهری</option>
+                        <option value="12646">طراحی صنعتی</option>
+                        <option value="13495">طراحی فرش</option>
+                        <option value="5543">طراحی لباس </option>
+                        <option value="5545">طراحی نقش پارچه </option>
+                        <option value="13097">طراحی نقشه فرش</option>
+                        <option value="16497">طراحی و خیاطی</option>
+                        <option value="13113">طلا سازی</option>
+                        <option value="12500">علوم آزمایشگاهی</option>
+                        <option value="5548">علوم اجتماعی </option>
+                        <option value="5558">علوم ارتباطات اجتماعی</option>
+                        <option value="5560">علوم اسلامی</option>
+                        <option value="5568">علوم اسلامی رضوی</option>
+                        <option value="5573">علوم اقتصادی </option>
+                        <option value="14469">علوم انتظامی</option>
+                        <option value="12595">علوم انسانی</option>
+                        <option value="12487">علوم تجربی</option>
+                        <option value="5590">علوم تربیتی</option>
+                        <option value="13002">علوم جانوری</option>
+                        <option value="13004">علوم دامی</option>
+                        <option value="5603">علوم دریایی و اقیانوسی </option>
+                        <option value="5606">علوم سیاسی </option>
+                        <option value="5613">علوم قرآن و حدیث </option>
+                        <option value="12786">علوم گیاهی</option>
+                        <option value="16508">علوم و فناوری نانو</option>
+                        <option value="16509">علوم وفناوری نانو</option>
+                        <option value="12659">علوم کامپیوتر</option>
+                        <option value="5622">علوم کتابداری و اطلاع‌رسانی </option>
+                        <option value="5627">عمران </option>
+                        <option value="13211">عکاسی</option>
+                        <option value="5641">غواصی </option>
+                        <option value="12727">فرزکاری</option>
+                        <option value="5643">فلسفه </option>
+                        <option value="5645">فلسفه تعلیم و تربیت و برنامه‌ریزی درسی </option>
+                        <option value="5647">فلسفه و عرفان اسلامی</option>
+                        <option value="5649">فلسفه و کلام اسلامی </option>
+                        <option value="12591">فوتونیک</option>
+                        <option value="16519">فیزیوتراپی</option>
+                        <option value="13265">فیزیولوژی</option>
+                        <option value="5652">فیزیک</option>
+                        <option value="16505">فیزیک اپتیک</option>
+                        <option value="5654">فیلم سازی</option>
+                        <option value="16563">قارچ شناسی</option>
+                        <option value="12515">گرافیک</option>
+                        <option value="14120">گرافیک رایانه ای</option>
+                        <option value="14271">گفتار درمانی </option>
+                        <option value="12750">گیاه پزشکی</option>
+                        <option value="13995">گیاهان دارویی</option>
+                        <option value="13687">لجستیک</option>
+                        <option value="12726">ماشین ابزار</option>
+                        <option value="13232">ماشین افزار</option>
+                        <option value="14104">ماشین الکتریکی</option>
+                        <option value="5663">مالی </option>
+                        <option value="12564">مامایی</option>
+                        <option value="5668">مترجمی</option>
+                        <option value="13171">محیط زیست</option>
+                        <option value="16561">محیط زیست</option>
+                        <option value="5670">مخابرات</option>
+                        <option value="14227">مدارک پزشکی</option>
+                        <option value="12559">مددکار اجتماعی</option>
+                        <option value="5677">مدیریت </option>
+                        <option value="14258">مدیریت آموزشی</option>
+                        <option value="14462">مدیریت امداد</option>
+                        <option value="5693">مدیریت امور دفتری </option>
+                        <option value="5695">مدیریت بازرگانی </option>
+                        <option value="5699">مدیریت بازرگانی دریایی </option>
+                        <option value="12651">مدیریت برنامه ریزی (MBA)</option>
+                        <option value="5703">مدیریت تکنولوژی </option>
+                        <option value="5708">مدیریت جهانگردی </option>
+                        <option value="12608">مدیریت خانواده</option>
+                        <option value="5710">مدیریت دولتی </option>
+                        <option value="12625">مدیریت صنعتی</option>
+                        <option value="5715">مدیریت فناوری</option>
+                        <option value="16546">مدیریت و برنامه ریزی آموزشی</option>
+                        <option value="16531">مدیریت کسب و کار</option>
+                        <option value="5718">مرمت آثار فرهنگی </option>
+                        <option value="12769">مرمت بناهای تاریخی</option>
+                        <option value="5740">مشاوره و راهنمایی </option>
+                        <option value="16530">مطالعات جهان</option>
+                        <option value="14119">مطالعات خانواده</option>
+                        <option value="5742">مطالعات منطقه‌ای</option>
+                        <option value="5756">معارف اسلامی </option>
+                        <option value="13974">معارف اسلامی و حقوق </option>
+                        <option value="5764">معلم فنی برق </option>
+                        <option value="5768">معلم فنی عمران </option>
+                        <option value="5770">معلم فنی مواد </option>
+                        <option value="5773">معلم فنی مکانیک </option>
+                        <option value="12430">معماری</option>
+                        <option value="5775">ملخ و انتقال نیرو </option>
+                        <option value="6058">مهمانداری </option>
+                        <option value="14339">مهندس آب و خاک </option>
+                        <option value="5777">مهندسی آب </option>
+                        <option value="14332">مهندسی اپتیک ولیزر</option>
+                        <option value="14465">مهندسی الکترواپتیک</option>
+                        <option value="5781">مهندسی ایمنی و بازرسی فنی </option>
+                        <option value="5784">مهندسی برق </option>
+                        <option value="13145">مهندسی پروژه</option>
+                        <option value="5796">مهندسی پزشکی</option>
+                        <option value="5802">مهندسی پلیمر و رنگ</option>
+                        <option value="12763">مهندسی تولیدات دامی</option>
+                        <option value="14259">مهندسی تکنولوژی الکترونیک</option>
+                        <option value="5806">مهندسی تکنولوژی فرماندهی و کنترل هوایی</option>
+                        <option value="14467">مهندسی تکنولوژی معماری</option>
+                        <option value="14256">مهندسی تکنولوژی نرم افزار کامپیوتر</option>
+                        <option value="13930">مهندسی خودرو</option>
+                        <option value="5809">مهندسی دریا</option>
+                        <option value="5812">مهندسی راه آهن </option>
+                        <option value="14223">مهندسی روباتیک</option>
+                        <option value="5821">مهندسی زمین شناسی</option>
+                        <option value="5823">مهندسی شیمی</option>
+                        <option value="5846">مهندسی صنایع </option>
+                        <option value="16538">مهندسی صنایع چندبخشی</option>
+                        <option value="13148">مهندسی طراحی محیط زیست</option>
+                        <option value="5858">مهندسی علوم و تکنولوژی هسته‌ای</option>
+                        <option value="5867">مهندسی عمران </option>
+                        <option value="13932">مهندسی فناوری اطلاعات</option>
+                        <option value="5898">مهندسی متالورژی و مواد</option>
+                        <option value="5909">مهندسی مخابرات </option>
+                        <option value="12781">مهندسی مدیریت اجرایی</option>
+                        <option value="13176">مهندسی مدیریت پروژه</option>
+                        <option value="5911">مهندسی معدن </option>
+                        <option value="5916">مهندسی معماری کشتی </option>
+                        <option value="5919">مهندسی منابع طبیعی</option>
+                        <option value="5943">مهندسی مکانیک </option>
+                        <option value="5956">مهندسی نساجی </option>
+                        <option value="5960">مهندسی نفت </option>
+                        <option value="5973">مهندسی هسته‌ای</option>
+                        <option value="5981">مهندسی هوا فضا </option>
+                        <option value="6000">مهندسی هوانوردی </option>
+                        <option value="6002">مهندسی کامپیوتر </option>
+                        <option value="6011">مهندسی کشاورزی </option>
+                        <option value="14349">موزه داری</option>
+                        <option value="12623">موسیقی</option>
+                        <option value="13182">مکاترونیک</option>
+                        <option value="6038">مکانیک </option>
+                        <option value="14461">مکانیک تاسیسات حرارتی نیروگاه</option>
+                        <option value="6055">مکانیک صنایع </option>
+                        <option value="13358">میهمانداری </option>
+                        <option value="12422">میکروبیولوژی</option>
+                        <option value="6061">ناوبری </option>
+                        <option value="6063">نفر بر پی ام پی 1</option>
+                        <option value="6065">نفر بر پی ام پی 2</option>
+                        <option value="12582">نقاشی</option>
+                        <option value="13166">نقشه برداری</option>
+                        <option value="6067">نقشه کشی</option>
+                        <option value="6069">نمایش</option>
+                        <option value="6075">نهج‌البلاغه  </option>
+                        <option value="6079">نیروی محرکه کشتی</option>
+                        <option value="14292">هتلداری</option>
+                        <option value="13487">هنرهای اسلامی</option>
+                        <option value="6081">هنرهای تجسمی</option>
+                        <option value="6087">هنرهای سنتی </option>
+                        <option value="6089">هنرهای صناعی </option>
+                        <option value="6097">هنرهای نمایشی</option>
+                        <option value="6110">وسایل پشتیبانی زمینی </option>
+                        <option value="6112">وسایل فرعی و مکانیکی </option>
+                        <option value="6114">کاربری کامپیوتر </option>
+                        <option value="6120">کاردان شیمی</option>
+                        <option value="6122">کاردان فنی برق</option>
+                        <option value="6129">کاردان فنی دریا </option>
+                        <option value="6131">کاردان فنی شیمی </option>
+                        <option value="6134">کاردان فنی صنایع نساجی </option>
+                        <option value="6136">کاردان فنی عمران </option>
+                        <option value="6159">کاردان فنی معدن </option>
+                        <option value="6162">کاردان فنی مکانیک </option>
+                        <option value="6171">کاردان فنی نساجی</option>
+                        <option value="6173">کاردان فنی نفت </option>
+                        <option value="6175">کاردان فنی هوا فضا </option>
+                        <option value="14002">کاردانش</option>
+                        <option value="6177">کاردانی صنایع چوب و کاغذ</option>
+                        <option value="6179">کاردانی علمی </option>
+                        <option value="16536">کارشناسی حرفه ای مدیریت تبلیغات</option>
+                        <option value="6181">کارشناسی کاربردی مخابرات</option>
+                        <option value="6184">کامپیوتر </option>
+                        <option value="6192">کتابت و نگارگری </option>
+                        <option value="6194">کتابداری و اطلاع‌رسانی </option>
+                        <option value="6196">کنترل آتش سلاح</option>
+                        <option value="13667">کنترل وابزاردقیق</option>
+                        <option value="6198">کودکیاری </option>
+
+                    </select>
+                </div>
+                <div class="w3-col m4 w3-right">
+                    <label>گرایش تحصیلی</label>
+                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 70%; margin: auto;">
+                </div>
+            </div>
+            <br><br>
+            <div class="w3-row-padding w3-center w3-small"
+                 style="direction: rtl; width: 70%;margin: auto;">
+
+                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                    <label>نوع حقوق</label>
+                    <select class="w3-select w3-round" name="SalaryTypeID" id="SalaryTypeID" onchange="showWage()" name="option">
+                        <option value="" disabled selected>انتخاب کنید</option>
+                        <option value="1">توافقی</option>
+                        <option value="2">حداقل حقوق</option>
+                        <option value="3">طبق قانون کار</option>
+                    </select>
+                </div>
+                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
+                    <label>جنسیت</label>
+                    <select class="w3-select w3-round" name="option">
+                        <option value="" disabled selected>انتخاب کنید</option>
+                        <option value="1">مرد</option>
+                        <option value="2">زن</option>
+                    </select>
+                </div>
+                <div id="salary" class="w3-col m4 w3-right" style="display: none;">
+                    <label>حداقل حقوق</label>
+                    <input class="w3-input w3-round"
+                           type="text" name="minWage" style="height: 30px; width: 70%; margin: auto;">
+                </div>
+            </div>
+            <br><br>
+            <div style="margin: auto;">
+                <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
+                       type="submit" value="جستجو" style="height: 30px;">
+            </div>
+            <br>
+        </div>
+
+    </form>
+
+    <div class="w3-responsive" style="direction: rtl;">
+        <table class="w3-table w3-striped w3-bordered w3-border-top w3-border-bottom w3-hoverable">
+            <thead>
+            <tr class="w3-grey">
+                <th class="w3-right-align">شماره شغل</th>
+                <th class="id01 w3-right-align">عنوان شغل</th>
+                <th class="w3-right-align">کاریابی</th>
+                <th class="w3-right-align">جنسیت</th>
+                <th class="w3-right-align">استان</th>
+                <th class="w3-right-align">محدوده</th>
+                <th class="w3-right-align">نوع حقوق</th>
+                <th class="w3-right-align">حقوق</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td class="w3-right-align">رکوردی برای نمایش وجود ندارد </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+
+<script>
+    function myAccFunc(id) {
+        document.getElementById(id).classList.toggle("w3-show");
+        document.getElementById(id).previousElementSibling.classList.toggle("w3-teal");
+    }
+
+    function showWage() {
+        var e = document.getElementById("SalaryTypeID");
+        var element = document.getElementById("salary");
+        var element1 = document.getElementById("salarybreak")
+        var val = e.options[e.selectedIndex].value;
+        if (val == 2) {
+            element.style.display = "block";
+            element1.style.display = "block";
+        }
+        else {
+            element.style.display = "none";
+            element1.style.display = "none";
+        }
+    }
+
+</script>
+
+</body>
+</html>
