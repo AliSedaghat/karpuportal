@@ -29,30 +29,29 @@
             <a onclick="myAccFunc('demoAcc1')" class="w3-padding" href="#">ثبت اطلاعات <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc1" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="#">اطلاعات فردی</a>
-                <a class="w3-border-bottom" href="#">سوابق کاری</a>
-                <a class="w3-border-bottom" href="#">سوابق تحصیلی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/personalinformation.html">اطلاعات فردی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/jobexperience.html">سوابق کاری</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/educationalBackground.html">سوابق تحصیلی</a>
             </div>
         </div>
         <div class="w3-accordion">
             <a onclick="myAccFunc('demoAcc2')" class="w3-padding" href="#">فرصت شغلی <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc2" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="#">مشاغل درخواستی</a>
-                <a class="w3-border-bottom" href="#">جستجو در فرصت های شغلی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/requestedjob.html">مشاغل درخواستی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/findjob.html">جستجو در فرصت های شغلی</a>
             </div>
         </div>
         <div class="w3-accordion">
             <a onclick="myAccFunc('demoAcc3')" class="w3-padding" href="#">پیام ها <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc3" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="#">پیام های دعوت به کار</a>
-                <a class="w3-border-bottom" href="#">پیام های درخواست کار</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/invitation.html">پیام های دعوت به کار</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/requestedjobmessage.html">پیام های درخواست کار</a>
             </div>
         </div>
     </nav>
 </div>
-
 <div class="w3-main w3-right-align" style="margin-right: 25%; direction:rtl;">
     <header class="w3-container w3-light-grey" style="direction: rtl;">
         <h4>اطلاعات تماسی</h4>
@@ -68,7 +67,7 @@
 
                 <div class="w3-col m6 w3-right" style="padding-right: 40px; padding-left: 40px;">
                     <label>استان</label>
-                    <select class="w3-select w3-round" name="option">
+                    <select class="w3-select w3-round" name="stateId">
                         <option value="">انتخاب کنید</option>
                         <option value="4400">آذربایجان شرقی</option>
                         <option value="4520">آذربایجان غربی</option>
@@ -105,7 +104,7 @@
                 </div>
                 <div class="w3-col m6 w3-right">
                     <label>شهرستان</label>
-                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    <input class="w3-input w3-round" name="countyId" type="text" style="height: 30px; width: 76%; margin: auto;">
                 </div>
 
             </div>
@@ -115,11 +114,11 @@
 
                 <div class="w3-col m6 w3-right">
                     <label>بخش</label>
-                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    <input class="w3-input w3-round" name="sectionId" type="text" style="height: 30px; width: 76%; margin: auto;">
                 </div>
                 <div class="w3-col m6 w3-right">
                     <label>شهر</label>
-                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    <input class="w3-input w3-round" name="cityId" type="text" style="height: 30px; width: 76%; margin: auto;">
                 </div>
 
             </div>
@@ -129,11 +128,11 @@
 
                 <div class="w3-col m6 w3-right">
                     <label>خیابان</label>
-                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    <input class="w3-input w3-round" name="streetId" type="text" style="height: 30px; width: 76%; margin: auto;">
                 </div>
                 <div class="w3-col m6 w3-right">
                     <label>ادامه آدرس</label>
-                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    <input class="w3-input w3-round" name="restOfAddressId" type="text" style="height: 30px; width: 76%; margin: auto;">
                 </div>
 
             </div>
@@ -143,11 +142,11 @@
 
                 <div class="w3-col m6 w3-right">
                     <label>کد پستی</label>
-                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    <input class="w3-input w3-round" name="postCodeId" type="text" style="height: 30px; width: 76%; margin: auto;">
                 </div>
                 <div class="w3-col m6 w3-right">
                     <label>تلفن</label>
-                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    <input class="w3-input w3-round" name="telephoneId" type="text" style="height: 30px; width: 76%; margin: auto;">
                 </div>
 
             </div>

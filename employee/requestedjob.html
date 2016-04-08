@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>مشاغل درخواستی</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -13,10 +13,10 @@
             <a href="#">کاربر <i class="fa fa-caret-down"></i></a>
             <div class="w3-dropdown-content w3-blue-grey w3-right-align">
                 <a href="#"
-                   onclick="document.getElementById('id02').style.display='block'">تغییر نام کاربری</a>
-                <a href="#" onclick="document.getElementById('id03').style.display='block'">تغییر کلمه عبور</a>
-                <a href="#">تکمیل اطلاعات تماسی</a>
-                <a href="#">خروج</a>
+                   onclick="document.getElementById('id04').style.display='block'">تغییر نام کاربری</a>
+                <a href="#" onclick="document.getElementById('id05').style.display='block'">تغییر کلمه عبور</a>
+                <a href="/karpuportal/employee/jscontact.html">تکمیل اطلاعات تماسی</a>
+                <a href="/karpuportal/login.html">خروج</a>
             </div>
         </li>
 
@@ -29,25 +29,25 @@
             <a onclick="myAccFunc('demoAcc1')" class="w3-padding" href="#">ثبت اطلاعات <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc1" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="#">اطلاعات فردی</a>
-                <a class="w3-border-bottom" href="#">سوابق کاری</a>
-                <a class="w3-border-bottom" href="#">سوابق تحصیلی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/personalinformation.html">اطلاعات فردی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/jobexperience.html">سوابق کاری</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/educationalBackground.html">سوابق تحصیلی</a>
             </div>
         </div>
         <div class="w3-accordion">
             <a onclick="myAccFunc('demoAcc2')" class="w3-padding" href="#">فرصت شغلی <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc2" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="#">مشاغل درخواستی</a>
-                <a class="w3-border-bottom" href="#">جستجو در فرصت های شغلی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/requestedjob.html">مشاغل درخواستی</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/findjob.html">جستجو در فرصت های شغلی</a>
             </div>
         </div>
         <div class="w3-accordion">
             <a onclick="myAccFunc('demoAcc3')" class="w3-padding" href="#">پیام ها <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc3" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="#">پیام های دعوت به کار</a>
-                <a class="w3-border-bottom" href="#">پیام های درخواست کار</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/invitation.html">پیام های دعوت به کار</a>
+                <a class="w3-border-bottom" href="/karpuportal/employee/requestedjobmessage.html">پیام های درخواست کار</a>
             </div>
         </div>
     </nav>
@@ -68,7 +68,7 @@
 
                 <div class="w3-col m6 w3-right">
                     <label>شغل</label>
-                    <input class="w3-input w3-round" type="text" style="height: 30px; width: 76%; margin: auto;">
+                    <input class="w3-input w3-round" name="jobId" type="text" style="height: 30px; width: 76%; margin: auto;">
                 </div>
                 <div class="w3-col m6 w3-right w3-margin-top">
                     <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
