@@ -6,9 +6,19 @@
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>ثبت نام</title>
+    <style>
+        @font-face {
+            font-family: 'Yekan';
+            src: url(Yekan.ttf);
+
+        }
+        .title {
+            font-family: Yekan;
+        }
+    </style>
 </head>
 
-<body id="myPage" class="w3-light-grey">
+<body id="myPage" class="w3-light-grey" style="font-family: Yekan;">
 
 <!-- navbar -->
 <div>
@@ -56,15 +66,10 @@
         </p>
 
         <p>
-            <label class="w3-validate">کارفرما</label>
-            <input class="w3-radio" type="radio" name="employerId" value="karfarma" checked>
-        </p>
+            کارفرما<input class="w3-radio" type="radio" name="gender" value="male" checked>&nbsp;
+            کارجو<input class="w3-radio" type="radio" name="gender" value="female">
 
-        <p>
-            <label class="w3-validate">کارجو</label>
-            <input class="w3-radio" type="radio" name="employeeId" value="karjo">
         </p>
-
 
         <p>
             <input class="w3-btn w3-section w3-teal w3-ripple w3-center" type="submit" value="ثبت نام"></p>
@@ -81,13 +86,13 @@
 <div class="w3-container w3-padding-64 w3-white">
     <div class="w3-row">
         <div class="w3-col m5 w3-right w3-right-align">
-            <h3>آدرس</h3>
+            <h3 class="title">آدرس</h3>
             <p>  دانشگاه شهید بهشتی<i class="fa fa-map-marker w3-text-teal w3-xlarge"></i></p>
             <p>+00 1515151515  <i class="fa fa-phone w3-text-teal w3-xlarge"></i></p>
             <p>test@test.com  <i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i></p>
         </div>
         <div class="w3-col m7">
-            <h2 class="w3-padding-bottom w3-right-align">تماس با ما</h2>
+            <h2 class="w3-padding-bottom w3-right-align ti">تماس با ما</h2>
             <form class="w3-container w3-right-align" style="direction: rtl">
                 <div class="w3-group">
                     <input class="w3-input" style="width:100%;" type="text" required>
@@ -108,7 +113,7 @@
 </div>
 <!-- Footer -->
 <footer class="w3-container w3-padding-32 w3-theme w3-center w3-black">
-    <h4>ما را دنبال کنید</h4>
+    <h4 class="title">ما را دنبال کنید</h4>
     <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
     <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
     <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>

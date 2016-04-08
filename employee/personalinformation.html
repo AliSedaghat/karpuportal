@@ -8,13 +8,21 @@
     .info {
         display: none;
     }
+    @font-face {
+        font-family: 'Yekan';
+        src: url(/karpuportal/Yekan.ttf);
+
+    }
+    .title {
+        font-family: Yekan;
+    }
 
 </style>
-<body>
+<body style="font-family: Yekan">
 
 <div>
     <ul class="w3-navbar w3-card-2 w3-dark-grey">
-        <li class="w3-right w3-padding-right"><h3>پنل کارجو</h3></li>
+        <li class="w3-right w3-padding-right"><h3 class="title">پنل کارجو</h3></li>
         <li class="w3-dropdown-hover w3-padding-top w3-left">
             <a href="#">کاربر <i class="fa fa-caret-down"></i></a>
             <div class="w3-dropdown-content w3-blue-grey w3-right-align">
@@ -74,13 +82,13 @@
 
     <div id="id01" class="info w3-animate-left">
         <header class="w3-container w3-light-grey" style="direction: rtl;">
-            <h4>تکمیل اطلاعات پایه کارجو</h4>
+            <h4 class="title">تکمیل اطلاعات پایه کارجو</h4>
             <hr class="w3-blue-grey">
         </header>
         <form>
-            <div class="w3-row-padding w3-center w3-small w3-light-grey"
+            <div class="w3-row-padding w3-center  w3-light-grey"
                  style="direction: rtl; width: 100%; margin-top: 0px; margin: auto;">
-                <div class="w3-row-padding w3-center w3-small"
+                <div class="w3-row-padding w3-center "
                      style="direction: rtl; width: 70%;  margin: auto;">
 
                     <div class="w3-col m4 w3-right">
@@ -97,7 +105,7 @@
                     </div>
                 </div>
                 <br><br>
-                <div class="w3-row-padding w3-center w3-small"
+                <div class="w3-row-padding w3-center "
                      style="direction: rtl; width: 70%;margin: auto;">
 
                     <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
@@ -118,7 +126,7 @@
                     </div>
                 </div>
                 <br><br>
-                <div class="w3-row-padding w3-center w3-small"
+                <div class="w3-row-padding w3-center "
                      style="direction: rtl; width: 70%;margin: auto;">
 
                     <div class="w3-col m4 w3-right">
@@ -140,7 +148,7 @@
                 </div>
                 <br><br>
                 <div style="margin: auto">
-                    <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
+                    <input class="w3-btn  w3-border w3-border-blue-grey w3-white"
                            type="submit" value="ثبت" style="height: 20px; text-align: center; padding-top: 2px;">
                 </div>
                 <br>
@@ -151,13 +159,13 @@
 
     <div id="id02" class="info w3-animate-left">
         <header class="w3-container w3-light-grey" style="direction: rtl;">
-            <h4>جزئیات</h4>
+            <h4 class="title">جزئیات</h4>
             <hr class="w3-blue-grey">
         </header>
         <form>
-            <div class="w3-row-padding w3-center w3-small w3-light-grey"
+            <div class="w3-row-padding w3-center  w3-light-grey"
                  style="direction: rtl; width: 100%; margin-top: 0px; margin: auto;">
-                <div class="w3-row-padding w3-center w3-small"
+                <div class="w3-row-padding w3-center "
                      style="direction: rtl; width: 70%;  margin: auto;">
 
                     <div class="w3-col m6 w3-right wrapper" style="padding-right: 40px; padding-left: 40px;">
@@ -185,7 +193,7 @@
 
                 </div>
                 <br>
-                <div class="w3-row-padding w3-center w3-small"
+                <div class="w3-row-padding w3-center "
                      style="direction: rtl; width: 70%;margin: auto;">
 
                     <div class="w3-col m6 w3-right wrapper" style="padding-right: 40px; padding-left: 40px;">
@@ -208,7 +216,7 @@
 
                 </div>
                 <br>
-                <div id="salary" class="w3-row-padding w3-center w3-small"
+                <div id="salary" class="w3-row-padding w3-center "
                      style="display: none; direction: rtl; width: 70%;margin: auto;">
                     <div class="w3-col m6 w3-right">
                         <label for="MinimumSalary">حداقل مبلغ پرداختی</label>
@@ -218,7 +226,7 @@
                 </div>
                 <br id="salarybreak" style="display: none;">
                 <div style="margin: auto">
-                    <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
+                    <input class="w3-btn  w3-border w3-border-blue-grey w3-white"
                            type="submit" value="ثبت" style="height: 20px; text-align: center; padding-top: 2px;">
                 </div>
                 <br>
@@ -229,14 +237,14 @@
 
     <div id="id03" class="info w3-animate-left">
         <header class="w3-container w3-light-grey" style="direction: rtl;">
-            <h4>تغییر مشخصات کاربری</h4>
+            <h4 class="title">تغییر مشخصات کاربری</h4>
             <hr class="w3-blue-grey">
         </header>
         <form>
 
-            <div class="w3-row-padding w3-center w3-small w3-light-grey"
+            <div class="w3-row-padding w3-center  w3-light-grey"
                  style="direction: rtl; width: 100%; margin-top: 0px; margin: auto;">
-                <div class="w3-row-padding w3-center w3-small"
+                <div class="w3-row-padding w3-center "
                      style="direction: rtl; width: 70%;margin: auto;">
 
                     <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
@@ -247,7 +255,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="w3-row-padding w3-center w3-small"
+                <div class="w3-row-padding w3-center "
                      style="direction: rtl; width: 70%;margin: auto;">
 
                     <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
@@ -258,7 +266,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="w3-row-padding w3-center w3-small"
+                <div class="w3-row-padding w3-center "
                      style="direction: rtl; width: 70%;margin: auto;">
 
                     <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
@@ -269,7 +277,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="w3-row-padding w3-center w3-small"
+                <div class="w3-row-padding w3-center "
                      style="direction: rtl; width: 70%;margin: auto;">
 
                     <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
@@ -280,11 +288,11 @@
                     </div>
                 </div>
                 <br>
-                <div class="w3-row-padding w3-center w3-small"
+                <div class="w3-row-padding w3-center "
                      style="direction: rtl; width: 70%;margin: auto;">
 
                     <div class="w3-col m6 w3-right" style="padding-top: 2px;width: 30%;">
-                        <input class="w3-btn w3-small w3-border w3-border-blue-grey w3-white"
+                        <input class="w3-btn  w3-border w3-border-blue-grey w3-white"
                                type="submit" value="ثبت" style="height: 20px; text-align: center; padding-top: 2px;">
                     </div>
                 </div>

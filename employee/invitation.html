@@ -4,11 +4,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
-<body>
+<style>
+    @font-face {
+        font-family: 'Yekan';
+        src: url(/karpuportal/Yekan.ttf);
+
+    }
+    .title {
+        font-family: Yekan;
+    }
+</style>
+<body style="font-family: Yekan">
 
 <div>
     <ul class="w3-navbar w3-card-2 w3-dark-grey">
-        <li class="w3-right w3-padding-right"><h3>پنل کارجو</h3></li>
+        <li class="w3-right w3-padding-right"><h3 class="title">پنل کارجو</h3></li>
         <li class="w3-dropdown-hover w3-padding-top w3-left">
             <a href="#">کاربر <i class="fa fa-caret-down"></i></a>
             <div class="w3-dropdown-content w3-blue-grey w3-right-align">
@@ -55,7 +65,7 @@
 
 <div class="w3-main w3-right-align" style="margin-right: 25%; direction:rtl;">
     <header class="w3-container w3-light-grey" style="direction: rtl;">
-        <h4>لیست پیام های دعوت به کار</h4>
+        <h4 class="title">لیست پیام های دعوت به کار</h4>
         <hr class="w3-blue-grey">
     </header>
 
