@@ -2,31 +2,31 @@
 <html>
 <title>دعوت به کار</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <style>
     @font-face {
         font-family: 'Yekan';
-        src: url(/karpuportal/Yekan.ttf);
+        src: url(Yekan.ttf);
 
     }
     .title {
         font-family: Yekan;
     }
 </style>
-<body>
+<body style="font-family: Yekan">
 
 <div>
     <ul class="w3-navbar w3-card-2 w3-dark-grey">
-        <li class="w3-right w3-padding-right"><h3 class="title">پنل کارفرما</h3></li>
+        <li class="w3-right w3-padding-right"><h3 class="title">پنل کارجو</h3></li>
         <li class="w3-dropdown-hover w3-padding-top w3-left">
             <a href="#">کاربر <i class="fa fa-caret-down"></i></a>
             <div class="w3-dropdown-content w3-blue-grey w3-right-align">
                 <a href="#"
                    onclick="document.getElementById('id04').style.display='block'">تغییر نام کاربری</a>
                 <a href="#" onclick="document.getElementById('id05').style.display='block'">تغییر کلمه عبور</a>
-                <a href="/karpuportal/employer/emcontact.html">تکمیل اطلاعات تماسی</a>
-                <a href="/karpuportal/login.html">خروج</a>
+                <a href="jscontact.html">تکمیل اطلاعات تماسی</a>
+                <a href="login.html">خروج</a>
             </div>
         </li>
 
@@ -36,27 +36,28 @@
 <div style="direction: rtl;">
     <nav class="w3-sidenav w3-blue-grey" style="width:25%;">
         <div class="w3-accordion">
-            <a onclick="myAccFunc('demoAcc1')" class="w3-padding" href="#">اطلاعات تماسی <i class="fa fa-caret-down"></i>
+            <a onclick="myAccFunc('demoAcc1')" class="w3-padding" href="#">ثبت اطلاعات <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc1" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="/karpuportal/employer/edit.html">ویرایش</a>
+                <a class="w3-border-bottom" href="personalinformation.html">اطلاعات فردی</a>
+                <a class="w3-border-bottom" href="jobexperience.html">سوابق کاری</a>
+                <a class="w3-border-bottom" href="educationalBackground.html">سوابق تحصیلی</a>
             </div>
         </div>
         <div class="w3-accordion">
             <a onclick="myAccFunc('demoAcc2')" class="w3-padding" href="#">فرصت شغلی <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc2" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="/karpuportal/employer/jobcareer.html">ثبت فرصت شغلی</a>
-                <a class="w3-border-bottom" href="/karpuportal/employer/jobcareerlist.html">لیست فرصت های شغلی من</a>
+                <a class="w3-border-bottom" href="requestedjob.html">مشاغل درخواستی</a>
+                <a class="w3-border-bottom" href="findJob.html">جستجو در فرصت های شغلی</a>
             </div>
         </div>
-        <a class="w3-padding" href="/karpuportal/employer/findjobseeker.html">جستجوی نیروی کار</a>
         <div class="w3-accordion">
             <a onclick="myAccFunc('demoAcc3')" class="w3-padding" href="#">پیام ها <i class="fa fa-caret-down"></i>
             </a>
-            <div id="demoAcc3" class="w3-accordion-content w3-animate-top w3-blue-grey w3-card-4">
-                <a class="w3-border-bottom" href="/karpuportal/employer/invitation.html">پیام های دعوت به کار</a>
-                <a class="w3-border-bottom" href="/karpuportal/employer/requestjob.html">پیام های درخواست کار</a>
+            <div id="demoAcc3" class="w3-accordion-content w3-animate-top w3-blue-grey">
+                <a class="w3-border-bottom" href="jsinvitation.html">پیام های دعوت به کار</a>
+                <a class="w3-border-bottom" href="/requestedjobmessage.html">پیام های درخواست کار</a>
             </div>
         </div>
     </nav>
@@ -64,7 +65,7 @@
 
 <div class="w3-main w3-right-align" style="margin-right: 25%; direction:rtl;">
     <header class="w3-container w3-light-grey" style="direction: rtl;">
-        <h4 class="title">پیام های دعوت به کار</h4>
+        <h4 class="title">لیست پیام های دعوت به کار</h4>
         <hr class="w3-blue-grey">
     </header>
 
@@ -73,7 +74,7 @@
             <thead>
             <tr class="w3-grey">
                 <th class="w3-right-align">عنوان پیام</th>
-                <th class="w3-right-align">نام کارجو</th>
+                <th class="w3-right-align">نام کارفرما</th>
             </tr>
             </thead>
 
@@ -87,7 +88,6 @@
     </div>
 
 </div>
-
 
 <!-- username modal -->
 <div id="id04" class="w3-modal">

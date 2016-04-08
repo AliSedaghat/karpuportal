@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-<title>جستجوی نیروی کار</title>
+<title>لیست فرصت های شغلی</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="w3.css">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <style>
     @font-face {
         font-family: 'Yekan';
-        src: url(/karpuportal/Yekan.ttf);
+        src: url(Yekan.ttf);
 
     }
     .title {
@@ -25,8 +25,8 @@
                 <a href="#"
                    onclick="document.getElementById('id04').style.display='block'">تغییر نام کاربری</a>
                 <a href="#" onclick="document.getElementById('id05').style.display='block'">تغییر کلمه عبور</a>
-                <a href="/karpuportal/employer/emcontact.html">تکمیل اطلاعات تماسی</a>
-                <a href="/karpuporta/login.html">خروج</a>
+                <a href="emcontact.html">تکمیل اطلاعات تماسی</a>
+                <a href="login.html">خروج</a>
             </div>
         </li>
 
@@ -39,95 +39,48 @@
             <a onclick="myAccFunc('demoAcc1')" class="w3-padding" href="#">اطلاعات تماسی <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc1" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="/karpuportal/employer/edit.html">ویرایش</a>
+                <a class="w3-border-bottom" href="edit.html">ویرایش</a>
             </div>
         </div>
         <div class="w3-accordion">
             <a onclick="myAccFunc('demoAcc2')" class="w3-padding" href="#">فرصت شغلی <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc2" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="/karpuportal/employer/jobcareer.html">ثبت فرصت شغلی</a>
-                <a class="w3-border-bottom" href="/karpuportal/employer/jobcareerlist.html">لیست فرصت های شغلی من</a>
+                <a class="w3-border-bottom" href="jobcareer.html">ثبت فرصت شغلی</a>
+                <a class="w3-border-bottom" href="jobcareerlist.html">لیست فرصت های شغلی من</a>
             </div>
         </div>
-        <a class="w3-padding" href="/karpuportal/employer/findjobseeker.html">جستجوی نیروی کار</a>
+        <a class="w3-padding" href="findjobseeker.html">جستجوی نیروی کار</a>
         <div class="w3-accordion">
             <a onclick="myAccFunc('demoAcc3')" class="w3-padding" href="#">پیام ها <i class="fa fa-caret-down"></i>
             </a>
             <div id="demoAcc3" class="w3-accordion-content w3-animate-top w3-blue-grey">
-                <a class="w3-border-bottom" href="/karpuportal/employer/invitation.html">پیام های دعوت به کار</a>
-                <a class="w3-border-bottom" href="/karpuportal/employer/requestjob.html">پیام های درخواست کار</a>
+                <a class="w3-border-bottom" href="eminvitation.html">پیام های دعوت به کار</a>
+                <a class="w3-border-bottom" href="requestjob.html">پیام های درخواست کار</a>
             </div>
         </div>
     </nav>
 </div>
 
-<div class="w3-main w3-right-align" style="margin-right: 25%; direction:rtl;">
+<div class="w3-main w3-right-align w3-light-grey" style="margin-right: 25%; direction:rtl;">
+    <p><a class="w3-btn w3-margin-right w3-margin-top w3-white w3-border w3-border-blue-grey" href="jobcareer.html">ایجاد فرصت شغلی</a></p>
     <header class="w3-container w3-light-grey" style="direction: rtl;">
-        <h4 class="title">جستجو</h4>
+        <h4 class="title">لیست فرصت های شغلی من</h4>
         <hr class="w3-blue-grey">
     </header>
 
-    <form>
 
-        <div class="w3-row-padding w3-center w3-light-grey"
-             style="direction: rtl; width: 100%; margin-top: 0px; margin: auto;">
-            <div class="w3-row-padding w3-center "
-                 style="direction: rtl; width: 70%;margin: auto;">
-
-                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
-                    <label>مقطع تحصیلی</label>
-                    <select class="w3-select w3-round" name="gradeId">
-                        <option value="" disabled selected>انتخاب کنید</option>
-                        <option value="1">بی سواد</option>
-                        <option value="2">ابتدایی</option>
-                        <option value="3">راهنمایی</option>
-                        <option value="4">دیپلم</option>
-                        <option value="5">فوق دیپلم</option>
-                        <option value="6">کارشناسی</option>
-                        <option value="7">کارشناسی ارشد</option>
-                        <option value="8">دکترا</option>
-                    </select>
-                </div>
-                <div class="w3-col m4 w3-right" style="padding-right: 40px; padding-left: 40px;">
-                    <label>رشته تحصیلی</label>
-                    <select class="w3-select w3-round" name="majorId">
-                        <option value="" disabled selected>انتخاب کنید</option>
-                        <option value="1">مهندسی کامپوتر</option>
-                        <option value="2">مهندسی عمران</option>
-                        <option value="3">مکانیک سیالات</option>
-                        <option value="4">مکانیک جامدات</option>
-                    </select>
-                </div>
-                <div class="w3-col m4 w3-right">
-                    <label>گرایش تحصیلی</label>
-                    <input class="w3-input w3-round" type="text" name="fieldId" style="height: 30px; width: 70%; margin: auto;">
-                </div>
-            </div>
-            <br>
-            <div style="margin: auto">
-                <input class="w3-btn  w3-border w3-border-blue-grey w3-white"
-                       type="submit" value="جستجو" style=" text-align: center; padding-top: 2px;">
-            </div>
-            <br>
-        </div>
-
-    </form>
 
     <div class="w3-responsive" style="direction: rtl;">
         <table class="w3-table w3-striped w3-bordered w3-border-top w3-border-bottom w3-hoverable">
             <thead>
             <tr class="w3-grey">
-                <th class="w3-right-align">شماره پرونده</th>
-                <th class="id01 w3-right-align">تاریخ ثبت</th>
-                <th id="id01" class="w3-right-align">نام کاریابی</th>
                 <th class="w3-right-align">جنسیت</th>
-                <th class="w3-right-align">وضعیت تاهل</th>
-                <th class="w3-right-align">سن</th>
-                <th class="w3-right-align">محدوده</th>
-                <th class="w3-right-align">مقطع تحصیلی</th>
-                <th class="w3-right-align">رشته</th>
-                <th class="w3-right-align">گرایش</th>
+                <th class="id01 w3-right-align">گروه شغلی</th>
+                <th id="id01" class="w3-right-align">شغل</th>
+                <th class="w3-right-align">نوع حقوق</th>
+                <th class="w3-right-align">کاریابی</th>
+                <th class="w3-right-align">تاریخ ثبت/تمدید</th>
             </tr>
             </thead>
 
@@ -139,17 +92,12 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
             </tbody>
         </table>
     </div>
 
 </div>
-
 
 <!-- username modal -->
 <div id="id04" class="w3-modal">
